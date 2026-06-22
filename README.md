@@ -1,2 +1,2 @@
-# neuro-ml-
-mach
+# neuro-ml
+machine learning EEGs
