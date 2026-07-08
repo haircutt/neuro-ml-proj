@@ -2,6 +2,7 @@
 
 import numpy as np
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 import mne
 
@@ -15,3 +16,10 @@ sample_data_raw_file = sample_data_folder / "sub-010002_EC_avgref_1-30Hz_ep00_ra
 
 x = mne.io.read_raw(sample_data_folder / "sub-010002_EC_avgref_1-30Hz_ep00_raw.fif")
 data = x.get_data()
+
+x.plot(
+    n_channels=32,      # number of channels displayed
+    scalings='auto',
+    duration=10         # seconds shown at once
+)
+plt.show()
