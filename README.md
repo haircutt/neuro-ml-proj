@@ -1,2 +1,2 @@
 # neuro-ml
-machine learning EEGs
+machine learning :)
