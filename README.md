@@ -1,2 +1,2 @@
 # neuro-ml
-machine learning :)
+Applying Machine Learning principles to the clustering of Electroencephalography (EEG) reads
