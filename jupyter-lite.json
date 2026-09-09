@@ -4,8 +4,7 @@
     "lab"
   ],
   "files": [
-    "microstate-clustering-eeg.ipynb",
-    "microstate-gfp.ipynb",
-    "microstate-all.ipynb"
+    "microstate-clustering-eeg-lite.ipynb",
+    "microstate-clustering-eeg.ipynb"
   ]
 }

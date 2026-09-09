@@ -5,16 +5,18 @@ title: JupyterLite
 
 # JupyterLite notebooks
 
-This page lists the notebooks available from the project site.
+This project includes a browser-runnable notebook that is designed to work in JupyterLite without the full EEG dataset.
 
 ## Available notebooks
 
-- [microstate-clustering-eeg.ipynb](./microstate-clustering-eeg.ipynb) — main EEG microstate clustering analysis notebook
-- [microstate-gfp.ipynb](./microstate-gfp.ipynb) — GFP peak extraction and analysis notebook
-- [microstate-all.ipynb](./microstate-all.ipynb) — combined notebook workflow
+- [Open the JupyterLite page](./jupyterlite.html) — browser landing page for the project notebooks
+- [Run the browser-friendly notebook](./microstate-clustering-eeg-lite.ipynb) — lightweight notebook that runs in JupyterLite
+- [Open the main project notebook](./microstate-clustering-eeg.ipynb) — full analysis notebook for the local project data
 
-## Open the main analysis
+## Quick start
 
-The primary notebook for this project is:
+The easiest notebook to open online is:
 
-- [Open microstate-clustering-eeg.ipynb](./microstate-clustering-eeg.ipynb)
+- [Open microstate-clustering-eeg-lite.ipynb](./microstate-clustering-eeg-lite.ipynb)
+
+This notebook uses synthetic EEG-like topographies and standard scientific Python libraries so it can execute in a browser-based environment.
