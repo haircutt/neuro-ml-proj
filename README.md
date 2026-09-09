@@ -2,6 +2,16 @@
 
 Identifying limitations within clustering (HDBScan) of Electroencephalography (EEG) reads.
 
+## Open in JupyterLite
+
+The browser-friendly notebook is available here:
+
+- [Launch JupyterLite](./lab/index.html)
+- [Open the synthetic notebook in JupyterLite](./lab/tree?path=microstate-clustering-eeg-lite.ipynb)
+- [Open the main analysis notebook](./microstate-clustering-eeg.ipynb)
+
+The JupyterLite notebook is intentionally lightweight and uses a synthetic EEG topography dataset so it runs in the browser without the large local data files.
+
 ## Overview
 
 
