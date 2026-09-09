@@ -27,7 +27,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install JupyterLite
-        run: python -m pip install --upgrade pip jupyterlite
+        run: python -m pip install --upgrade pip jupyterlite jupyter-server
 
       - name: Build JupyterLite site
         run: |
