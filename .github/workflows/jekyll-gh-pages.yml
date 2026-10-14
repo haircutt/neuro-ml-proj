@@ -32,8 +32,12 @@ jobs:
       - name: Build JupyterLite site
         run: |
           mkdir -p _site
-          python -m jupyterlite build --output-dir _site --apps lab --contents .
-          printf '%s\n' '<!doctype html>' '<html><head><meta http-equiv="refresh" content="0; url=./lab/index.html" /></head><body><p>Redirecting to JupyterLite...</p></body></html>' > _site/index.html
+          python -m jupyterlite build \
+            --output-dir _site \
+            --apps lab \
+            --contents . \
+            --base-url /neuro-ml-proj/
+          printf '%s\n' '<!doctype html>' '<html><head><meta http-equiv="refresh" content="0; url=/neuro-ml-proj/lab/index.html" /></head><body><p>Redirecting to JupyterLite...</p></body></html>' > _site/index.html
           touch _site/.nojekyll
 
       - name: Setup Pages
