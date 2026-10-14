@@ -29,16 +29,17 @@ jobs:
       - name: Install JupyterLite
         run: python -m pip install --upgrade pip jupyterlite jupyter-server
 
+      - name: Install JupyterLite
+        run: python -m pip install --upgrade pip jupyterlite-core jupyterlite-pyodide-kernel jupyter-server
+
       - name: Build JupyterLite site
         run: |
-          mkdir -p _site
+          mkdir -p content
+          cp microstate-clustering-eeg-lite.ipynb content/
           python -m jupyterlite build \
             --output-dir _site \
-            --apps lab \
-            --contents . \
+            --contents content \
             --base-url /neuro-ml-proj/
-          printf '%s\n' '<!doctype html>' '<html><head><meta http-equiv="refresh" content="0; url=/neuro-ml-proj/lab/index.html" /></head><body><p>Redirecting to JupyterLite...</p></body></html>' > _site/index.html
-          touch _site/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
