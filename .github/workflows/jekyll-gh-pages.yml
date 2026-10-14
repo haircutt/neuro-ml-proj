@@ -31,13 +31,15 @@ jobs:
 
       - name: Build JupyterLite site
         run: |
+          set -euxo pipefail
           mkdir -p content
           cp microstate-clustering-eeg-lite.ipynb content/
-          python -m jupyterlite build \
+          jupyter lite build \
             --output-dir _site \
             --contents content \
             --base-url /neuro-ml-proj/
           touch _site/.nojekyll
+          ls -la _site
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
