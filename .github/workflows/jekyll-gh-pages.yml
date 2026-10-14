@@ -27,9 +27,6 @@ jobs:
           python-version: '3.12'
 
       - name: Install JupyterLite
-        run: python -m pip install --upgrade pip jupyterlite jupyter-server
-
-      - name: Install JupyterLite
         run: python -m pip install --upgrade pip jupyterlite-core jupyterlite-pyodide-kernel jupyter-server
 
       - name: Build JupyterLite site
@@ -40,6 +37,7 @@ jobs:
             --output-dir _site \
             --contents content \
             --base-url /neuro-ml-proj/
+          touch _site/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
